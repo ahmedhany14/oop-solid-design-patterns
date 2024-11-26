@@ -1,0 +1,15 @@
+{
+  "name": "oop-solid-desgin-patterns-ts-",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "(npx parcel ./index.html) & npx parcel watch ./index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.1.0",
+    "parcel": "^2.13.2"
+  }
+}
