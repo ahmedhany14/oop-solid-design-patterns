@@ -33,3 +33,12 @@ class Blog {
         return `<h1>${this.title}</h1><p>${this.content}</p>`;
     }
 }
+
+
+const blog = new Blog('Title', 'Content');
+
+blog.publish();
+blog.save();
+blog.edit();
+blog.delete();
+console.log(blog.displayHTML());
