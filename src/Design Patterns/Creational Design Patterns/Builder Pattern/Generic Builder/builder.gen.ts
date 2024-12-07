@@ -9,9 +9,14 @@ export class GenericBuilder<T> {
     build(): T {
         const builtInstance = this.instance as T;
 
-        if(Object.keys(builtInstance as Object).length === 0) {
+        if (Object.keys(builtInstance as Object).length === 0) {
             throw new Error("You must set at least one property");
         }
+        
         return builtInstance;
+    }
+
+    reset(): void {
+        this.instance = {};
     }
 }
