@@ -35,7 +35,7 @@ abstract class HttpRequestDecorator implements HttpRequest {
 // Authentication Decorator (concrete decorator)
 
 class AuthenticationDecorator extends HttpRequestDecorator {
-    private token: string;
+    private readonly token: string;
 
     constructor(httpRequest: HttpRequest, token: string) {
         super(httpRequest);
